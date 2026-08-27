@@ -13,14 +13,16 @@
     "windows": [
       {
         "title": "Reproductor YouTube - Variados",
-        "width": 1200,
-        "height": 760,
-        "minWidth": 900,
-        "minHeight": 650,
+        "width": 430,
+        "height": 860,
+        "minWidth": 390,
+        "minHeight": 700,
         "resizable": true,
         "decorations": false,
         "transparent": false,
-        "center": true
+        "center": true,
+        "maxWidth": 520,
+        "maxHeight": 1000
       }
     ],
     "security": {
