@@ -34,7 +34,7 @@ jobs:
       - name: Publicar instaladores
         uses: actions/upload-artifact@v4
         with:
-          name: Reproductor-YouTube-Variados-Windows
+          name: SkMusic-Windows
           if-no-files-found: error
           retention-days: 30
           path: |

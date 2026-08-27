@@ -1,10 +1,10 @@
 @echo off
 setlocal enabledelayedexpansion
-title Reproductor YouTube - Variados - Setup
+title SkMusic - Setup
 cd /d "%~dp0"
 
 echo ============================================
-echo   Reproductor YouTube - Variados
+echo   SkMusic
 echo ============================================
 echo.
 
