@@ -144,9 +144,11 @@ export default function App() {
         },
         onStateChange: onPlayerStateChange,
         onError: () => {
-          // No rompemos la lista si un vídeo no está disponible.
+          // Si el vídeo actual falla, avanzamos solo si seguimos en la misma solicitud.
+          const failedRequestId = requestIdRef.current;
           setMessage("Este vídeo no está disponible. Probando el siguiente...");
           setTimeout(() => {
+            if (failedRequestId !== requestIdRef.current) return;
             try { playerRef.current?.nextVideo(); } catch {}
           }, 350);
         },

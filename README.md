@@ -8,7 +8,7 @@ volumen), sin necesidad de abrir el navegador.
 ## Cómo funciona el "reproducir directo de YouTube"
 
 Cada botón de categoría dispara una **búsqueda real en YouTube** usando la
-YouTube IFrame Player API oficial (`listType: "search"`), que no requiere
+YouTube IFrame Player API oficial usando playlists públicas por ID, evitando la búsqueda retirada
 API key. El reproductor de YouTube corre oculto (0x0) y toda la interfaz
 que ves (botones, barra de progreso, volumen) es una capa propia que lo
 controla. Podés cambiar los términos de búsqueda de cada categoría en
